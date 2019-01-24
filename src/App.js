@@ -3,14 +3,14 @@ import People from './components/People';
 import House from './components/House';
 import Building from './components/Building';
 import Apartment from './components/Apartment';
-import Proto from './prototype/Proto';
+import Store from './Store';
 
 class App extends Component {
   render() {
     return (
       <Fragment>
         <div>My App</div>
-        <Proto>
+        <Store>
           <div>Proto</div>
           <People app={'app for people'}/>
           <House />
@@ -18,7 +18,7 @@ class App extends Component {
             <div>Nesto Nesto</div>
             <Apartment />
           </Building>
-        </Proto>
+        </Store>
       </Fragment>
     );
   }
